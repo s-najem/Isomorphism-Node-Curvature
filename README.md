@@ -122,24 +122,26 @@ Supported comment prefixes:
 1) DIMACS / bliss-style format (usually 1-indexed)
 --------------------------------------------------
 Example:
-
+```
   c example graph
   p edge 4 3
   e 1 2
   e 2 3
   e 3 4
+```
 
 - Vertices are often 1..n; the loader applies a shift heuristic to convert to 0..n-1.
 
 2) Edge list with explicit header (0-indexed)
 ---------------------------------------------
 Example:
-
+```
   5 4
   0 1
   1 2
   2 3
   3 4
+```
 
 - First line: n m
 - Then exactly m edges
@@ -147,10 +149,11 @@ Example:
 3) Flexible edge list (no header)
 ---------------------------------
 Example:
-
+```
   1 2
   2 3
   3 4
+```
 
 - The loader infers vertex count and attempts a 0/1-index shift heuristic.
 
