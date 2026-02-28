@@ -117,7 +117,7 @@ INPUT GRAPH FORMATS
 The reader auto-detects several common formats and ignores comment lines.
 
 Supported comment prefixes:
-  #   %   c   C
+  \#   %   c   C
 
 1) DIMACS / bliss-style format (usually 1-indexed)
 --------------------------------------------------
